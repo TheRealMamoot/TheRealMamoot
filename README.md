@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://github.com/TheRealMamoot/TheRealMamoot/blob/main/obiwan.gif" width="500" height="280" />
+<img src="https://github.com/TheRealMamoot/TheRealMamoot/blob/main/obiwan.gif" width="375" height="210" />
 </p>
 
 ### 📖 **About**
