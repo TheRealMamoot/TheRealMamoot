@@ -1,36 +1,44 @@
 {
     // == Editor Settings ==
     "editor.accessibilitySupport": "off",
+    "editor.bracketPairColorization.enabled": true,
+    "editor.cursorBlinking": "expand",
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.cursorStyle": "line",
     "editor.codeActionsOnSave": {
-        "source.organizeImports": true
+        "source.organizeImports": "explicit"
     },
+    "editor.emptySelectionClipboard": false,
     "editor.fontFamily": "JetBrains Mono",
     "editor.fontLigatures": true,
     "editor.fontSize": 13,
     "editor.fontWeight": "500",
-    "editor.lineHeight": 22,
-    "editor.letterSpacing": 0.2,
-    "editor.cursorStyle": "line",
-    "editor.lineNumbers": "on",
-    "editor.renderWhitespace": "none",
-    "editor.stickyScroll.enabled": true,
-    "editor.wordWrap": "wordWrapColumn",
-    "editor.wordWrapColumn": 120,
-    "editor.bracketPairColorization.enabled": true,
-    "editor.guides.indentation": true,
-    "editor.smoothScrolling": true,
     "editor.formatOnSave": true,
     "editor.formatOnSaveMode": "file",
+    "editor.guides.indentation": true,
+    "editor.hideCursorInOverviewRuler": true,
+    "editor.lineHeight": 1.9,
+    "editor.lineNumbers": "relative",
+    "editor.letterSpacing": 0.2,
+    "editor.minimap.enabled": false,
+    // "editor.minimap.autohide": true,
+    // "editor.minimap.maxColumn": 80,
+    // "editor.minimap.size": "proportional",
+    "editor.occurrencesHighlight": "off",
+    "editor.overviewRulerBorder": false,
+    "editor.renderWhitespace": "none",
+    "editor.renderLineHighlightOnlyWhenFocus": true,
     "editor.rulers": [
         120
     ],
-    "editor.minimap.size": "fit",
-    "editor.minimap.autohide": true,
-    "editor.minimap.maxColumn": 80,
+    "editor.smoothScrolling": true,
+    "editor.stickyScroll.enabled": false,
+    "editor.wordWrap": "wordWrapColumn",
+    "editor.wordWrapColumn": 120,
     // == Python Specific Settings ==
     "[python]": {
         "editor.codeActionsOnSave": {
-            "source.organizeImports": true
+            "source.organizeImports": "explicit"
         }
     },
     // == Semantic Token Colors ==
@@ -103,13 +111,36 @@
             // },
         ]
     },
+    // == Intellisense ==
+    "editor.parameterHints.enabled": true,
+    "editor.quickSuggestions": {
+        "other": true,
+        "comments": true,
+        "strings": true
+    },
+    "editor.suggestOnTriggerCharacters": true,
+    "editor.snippetSuggestions": "top",
+    "editor.wordBasedSuggestions": "currentDocument",
+    "python.languageServer": "Pylance",
+    "files.autoSave": "afterDelay",
+    // == Explorer ==
+    "explorer.compactFolders": false,
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    "explorer.sortOrder": "type",
+    // == Diff Editor ==
+    "diffEditor.renderSideBySide": true,
     // == Workbench Settings ==
     "workbench.activityBar.location": "top",
+    "workbench.editor.showTabs": "single",
     "workbench.iconTheme": "material-icon-theme",
+    "workbench.layoutControl.enabled": false,
     "workbench.statusBar.visible": false,
     "workbench.sideBar.location": "right",
-    "workbench.tree.indent": 12,
+    "workbench.tree.enableStickyScroll": true,
+    "workbench.tree.indent": 16,
     "workbench.tree.renderIndentGuides": "always",
+    "workbench.startupEditor": "none",
     // == Workbench Color Customizations ==
     "workbench.colorCustomizations": {
         // == Activity Bar ==
@@ -119,16 +150,16 @@
         "activityBar.activeBackground": "#2c2c2c",
         "activityBar.inactiveForeground": "#9CDCFE",
         "activityBar.border": "#9CDCFE",
-        // "activityBarBadge.background": "#9CDCFE",
-        // "activityBarBadge.foreground": "#000000",
+        "activityBarBadge.background": "#9CDCFE",
+        "activityBarBadge.foreground": "#000000",
         // == Editor Colors ==
         "editorIndentGuide.background1": "#9cdcfe59",
         "editorIndentGuide.activeBackground1": "#9cdcfebb",
         "editorLineNumber.foreground": "#5f5f658d",
         "editorLineNumber.activeForeground": "#9CDCFE",
-        // "editor.lineHighlightBackground": "#9cdcfe28",
-        "editor.lineHighlightBorder": "#9cdcfea3",
-        "editor.selectionBackground": "#9cdcfe37",
+        "editor.lineHighlightBackground": "#9cdcfe09",
+        // "editor.lineHighlightBorder": "#9cdcfea3",
+        "editor.selectionBackground": "#9cdcfe42",
         // "editor.selectionForeground": "#ffffff",
         "editorRuler.foreground": "#9898982e",
         "editorBracketMatch.border": "#9CDCFE",
@@ -161,12 +192,14 @@
         "editorGroup.dropBackground": "#9cdcfe44",
         // "editorPane.background": "#1B1B1B",
         // == Input Fields ==
+        "button.border": "#9CDCFE",
+        "dropdown.border": "#9CDCFE",
         "focusBorder": "#9CDCFE",
         "input.border": "#9cdcfe74",
         // "input.background": "#9CDCFE",
         "input.foreground": "#9CDCFE",
         // "input.placeholderForeground": "#9cdcfe8b",
-        // == Lists and Trees ==
+        // == Lists ==
         "list.activeSelectionBackground": "#9cdcfe49",
         "list.activeSelectionForeground": "#9CDCFE",
         "list.inactiveSelectionBackground": "#9cdcfe67",
@@ -176,7 +209,7 @@
         "list.focusBackground": "#9cdcfe49",
         "list.focusForeground": "#ffffff",
         "list.dropBackground": "#9cdcfe49",
-        "list.highlightForeground": "#007acc",
+        "list.highlightForeground": "#f4c55a",
         "list.errorForeground": "#f96b6b",
         "list.warningForeground": "#f6b92a",
         // == Trees ==
@@ -195,13 +228,16 @@
         "terminal.border": "#9CDCFE",
         "terminal.dropBackground": "#9cdcfe49",
         "terminal.selectionBackground": "#264f78aa",
+        "panel.border": "#9CDCFE",
+        "panelTitle.activeBorder": "#9CDCFE",
         // == Terminal Command Decorations ==
         "terminalCommandDecoration.defaultBackground": "#151515",
         "terminalCommandDecoration.successBackground": "#4EC9B0",
-        "terminalCommandDecoration.errorBackground": "#F44747"
+        "terminalCommandDecoration.errorBackground": "#F44747",
     },
     // == Terminal and Env Settings ==
-    "python.terminal.activateEnvironment": true,
+    "python.terminal.activateEnvironment": false,
+    "python.terminal.activateEnvInCurrentTerminal": false,
     "terminal.integrated.env.osx": {
         "FIG_NEW_SESSION": "1",
         "Q_NEW_SESSION": "1"
@@ -210,11 +246,32 @@
     "terminal.integrated.letterSpacing": 2,
     "terminal.integrated.lineHeight": 1.2,
     "terminal.integrated.cursorBlinking": true,
-    // == File Associations (Material Icons) ==
+    // == Material Icons ==
     "material-icon-theme.files.associations": {
         "*.npz": "zip",
-        "*.midi": "audio"
+        "*.midi": "audio",
+        "*.keras": "robot",
     },
-    // == Breadcrumbs ==
-    "breadcrumbs.enabled": false
+    "material-icon-theme.hidesExplorerArrows": true,
+    "material-icon-theme.saturation": 1,
+    "material-icon-theme.folders.color": "#4EC9B0",
+    "material-icon-theme.files.color": "#DCDCAA",
+    // == Git ==
+    "git.openRepositoryInParentFolders": "never",
+    // == Extensions ==
+    // == Custom CSS ==
+    "vscode_custom_css.imports": [
+        "file:///Users/mahmoudian/Projects/.vscode/vscode-script.js",
+        "file:///Users/mahmoudian/Projects/.vscode/custom-vscode.css",
+    ],
+    "custom-ui-style.stylesheet": {
+        ".quick-input-list .scrollbar": "display: none !important;",
+        ".editor-widget.find-widget": "border-radius: 8px",
+    },
+    // == Project Manager ==
+    "projectManager.git.baseFolders": [
+        "~/Projects/"
+    ],
+    "editor.codeLens": false,
+    "r.lsp.diagnostics": false
 }
